@@ -1,0 +1,153 @@
+/* ===== HOME PAGE — CLEAN LAYOUT (NO CARDS) ===== */
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f6f9;
+    color: #1f2937;
+}
+
+/* MAIN CONTAINER */
+
+.profile-section {
+    display: flex;
+    gap: 60px;
+    max-width: 1100px;
+    margin: 80px auto;
+    align-items: flex-start;
+}
+
+/* ===== LEFT SIDE (PROFILE) ===== */
+.contact-title {
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.profile-card p {
+    margin: 6px 0;
+    font-size: 15px;
+    color:#e5e7eb;
+}
+.profile-card {
+    background: linear-gradient(180deg, #1f4a9b, #163b7a);
+    color: white;
+    padding: 40px 30px;
+    border-radius: 24px;
+    text-align: center;
+    width: 320px;
+    position: relative;
+    box-shadow: 0 16px 40px rgba(0,0,0,0.25);
+}
+/* PROFILE PHOTO */
+.profile-card::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 220px;
+    height: 220px;
+    background: radial-gradient(circle, rgba(255,255,255,0.25), transparent 70%);
+    border-radius: 50%;
+    z-index: 0;
+}
+.profile-card img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-position: center 1%;
+    object-fit: cover;
+    margin-bottom: 20px;
+position: relative;
+z-index: 1;
+    border: 6px solid rgba(255,255,255,0.9);
+
+    /* GLOW EFFECT */
+    box-shadow:
+        0 0 0 6px rgba(255,255,255,0.15),
+        0 12px 30px rgba(0,0,0,0.4);
+}
+
+/* NAME */
+
+.profile-card h1 {
+    font-size: 32px;
+    margin: 10px 0 6px;
+    color:white;
+}
+
+/* ROLE */
+
+.profile-card h2 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    color: #e5e7eb;
+}
+
+/* SOCIAL LINKS */
+
+.social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    margin: 6px;
+    border-radius: 50%;
+    background: #1f4a9b;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social a:hover {
+     background: white;
+    color: #1f4a9b;
+    transform: translateY(-3px);
+}
+
+/* RIGHT PANEL PREMIUM LOOK */
+
+.details {
+    flex: 1;
+    padding-top: 20px;
+}
+
+/* BIG HERO TITLE */
+
+.main-title {
+    font-size: 36px;
+    color: #1f4a9b;
+    margin-bottom: 10px;
+}
+
+/* SUBTITLE */
+
+.tagline {
+    font-size: 18px;
+    color: #374151;
+    margin-bottom: 25px;
+    max-width: 600px;
+}
+
+/* SECTION HEADINGS */
+
+.details h3 {
+    color: #1f4a9b;
+    margin-top: 30px;
+}
+
+/* TEXT */
+
+.details p {
+    line-height: 1.7;
+}
+
+/* SKILLS LIST */
+
+.details ul {
+    line-height: 1.8;
+    padding-left: 20px;
+}
